@@ -1,0 +1,115 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.servCard {
+    margin: 2%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 20px;
+}
+
+.cards img {
+    max-width: 40%;
+    height: auto;
+    transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.cards img:hover {
+    box-shadow: 15px 16px 30px 0px rgb(37, 44, 39);
+    -webkit-box-shadow: 15px 16px 30px 0px rgb(13, 40, 20);
+    -moz-box-shadow: 15px 16px 30px 0px rgb(71, 83, 74);
+    transform: translateY(10px);
+}
+
+
+/* .cards img:hover {
+    box-shadow: 15px 16px 30px 0px rgb(37, 44, 39);
+    -webkit-box-shadow: 15px 16px 30px 0px rgb(13, 40, 20);
+    -moz-box-shadow: 15px 16px 30px 0px rgb(71, 83, 74);
+    transform: translateY(10px);
+    transition: 2s ease-in-out;
+} */
+
+.cards p {
+    padding: 2%;
+    max-width: 55%;
+}
+
+.cards {
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .servCard {
+        margin: 5%;
+    }
+
+    .cards img {
+        max-width: 100%;
+    }
+
+    .cards p {
+        max-width: 100%;
+    }
+}
+
+
+.cards:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* typewriter textbox */
+  
+.company-details {
+    max-width: 90%; /* Adjust max-width based on your design */
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #aa712ce0;
+}
+
+@media (max-width: 768px) {
+    .company-details {
+        margin: 20px;
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+.typewriter-textbox {
+    overflow: hidden;
+    border-right: 1px solid #000;
+    /* white-space: nowrap; */
+    margin: 0 auto;
+    letter-spacing: 2px;
+    animation: typing 3s steps(40, end), blink-caret 1.0s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-right-color: #000;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}

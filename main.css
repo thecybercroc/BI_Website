@@ -1,0 +1,233 @@
+body {
+  /* background: #87CEEB; */
+  /* height: 100vh; */
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background: url(./background.jpg); */
+    background: url(./bg1.jpg);
+    animation: moveBackground 50s linear infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+    background-color: #0D0A0B;  
+}
+
+@keyframes moveBackground {
+  from {
+      background-position: 0 0;
+  }
+  to {
+      background-position: 100% 0;
+  }
+}
+
+main {
+  background-color: #1A1718; /* A slightly lighter shade of the secondary color */
+  color: #FFFFFF; /* Set text color to white for better readability */
+}
+
+/* Glassmorphism card effect */
+/* .card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(155, 155, 155, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+} */
+
+.navbar {
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  /* color: #FFFFFF; */
+  color: #AA722C;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  color: gray;
+  /* color: #88511F; */
+  /* opacity: 0.7; */
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger:hover {
+    opacity: 0.7;
+  }
+}
+
+.cardd {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cardd img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* or use "object-fit: contain;" for different behavior */
+}
+
+.cardd-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.overlay-text {
+  /* color: #dcff00e0; */
+  color: greenyellow;
+  text-align: center;
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  display: flexbox;
+  margin: 0px 30pc;
+  border-radius: 2pc;
+}
+
+#sticky-footer {
+  /* background-color: #333; */
+  background-color: #0D0A0B;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  margin: 0 15px;
+  font-size: 24px;
+  /* color: #fff; */
+  color: #AA722C;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  color: gray;
+  /* opacity: 0.7; */
+}
+
+/* Cards css */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.57);
+  /* opacity: 0.8; */
+  margin: 0 20px;
+  border-radius: 10px;
+}
+
+.custom-card {
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.card-inner {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.custom-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: transparent;
+  /* backdrop-filter: blur(10px); */
+}
+
+.card-back p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
