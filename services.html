@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./main.css">
-  <link rel="stylesheet" href="./services.css">
-  <link rel="icon" href="./logo.jpg" type="image/jpg">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./services.css" />
+    <link rel="icon" href="./logo.jpg" type="image/jpg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo.jpg" alt="Logo" />
+      </div>
+      <div class="menu" id="menu">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="burger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
 
-  <nav class="navbar">
-    <div class="logo">
-      <img src="./logo.jpg" alt="Logo">
-    </div>
-    <div class="menu" id="menu">
-      <ul>
-        <li><a target="_blank" href="./home.html">Home</a></li>
-        <li><a target="_blank" href="./about.html">About</a></li>
-        <li><a target="_blank" href="./services.html">Services</a></li>
-        <li><a target="_blank" href="./contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="burger" onclick="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-  </nav>
+    <br />
+    <br />
 
-<br>
-<br>
-
-<!-- <h2 class="servHead">Our Services:</h2>
+    <!-- <h2 class="servHead">Our Services:</h2>
 
 <div class="card-container-services">
 
@@ -88,132 +96,162 @@
   </div>
 </div> -->
 
-<div class="bg">
-  <h2>Our Projects</h2>
-</div>
+    <div class="bg">
+      <h2>Our Projects</h2>
+    </div>
 
-<div class="spCards">
-
-  <div class="nft">
-    <div class='main'>
-      <img class='tokenImage' src="./demo.jpg" alt="NFT" />
-      <h2>OPULENCE GREEN</h2>
-      <p class='description'>Luxurious 4 BHK flats with a carpet area of 2900 sq. ft., @ Bhayli TP-1, READY FOR FITOUTS.</p>
-      <div class='tokenInfo'>
-        <!-- <div class="price">
+    <div class="spCards">
+      <div class="nft">
+        <div class="main">
+          <img class="tokenImage" src="./images/project1.jpg" alt="NFT" />
+          <h2>OPULENCE GREEN</h2>
+          <p class="description">
+            Luxurious 4 BHK flats with a carpet area of 2900 sq. ft., @ Bhayli
+            TP-1, READY FOR FITOUTS.
+          </p>
+          <div class="tokenInfo">
+            <!-- <div class="price">
           <ins>◘</ins>
           <p>0.031 ETH</p>
         </div> -->
-      </div>
-      <hr />
-      <div class='creator'>
-        <div class='wrapper'>
-          <img src="./logo.jpg" alt="Creator" />
+          </div>
+          <hr />
+          <div class="creator">
+            <div class="wrapper">
+              <img src="./images/logo.jpg" alt="Creator" />
+            </div>
+            <p><ins>Presented by</ins> BARODA INFRA</p>
+          </div>
         </div>
-        <p><ins>Presented by</ins> BARODA INFRA</p>
       </div>
-    </div>
-  </div>
 
-  <div class="nft">
-    <div class='main'>
-      <img class='tokenImage' src="./commercialBuilding.jpg" alt="NFT" />
-      <h2>Commercial Spaces</h2>
-      <p class='description'>Commercial spaces at best locations of Vadodara.</p>
-      <div class='tokenInfo'>
-        <!-- <div class="price">
+      <div class="nft">
+        <div class="main">
+          <img
+            class="tokenImage"
+            src="./images/commercialBuilding.jpg"
+            alt="NFT"
+          />
+          <h2>Commercial Spaces</h2>
+          <p class="description">
+            Commercial spaces at best locations of Vadodara.
+          </p>
+          <div class="tokenInfo">
+            <!-- <div class="price">
           <ins>◘</ins>
           <p>0.031 ETH</p>
         </div> -->
-      </div>
-      <hr />
-      <div class='creator'>
-        <div class='wrapper'>
-          <img src="./logo.jpg" alt="Creator" />
+          </div>
+          <hr />
+          <div class="creator">
+            <div class="wrapper">
+              <img src="./images/logo.jpg" alt="Creator" />
+            </div>
+            <p><ins>Presented by</ins> BARODA INFRA</p>
+          </div>
         </div>
-        <p><ins>Presented by</ins> BARODA INFRA</p>
       </div>
-    </div>
-  </div>
 
-  <div class="nft">
-    <div class='main'>
-      <img class='tokenImage' src="./openPlot.jpg" alt="NFT" />
-      <h2>Open Plots</h2>
-      <p class='description'>Plots at your preferred locations.</p>
-      <div class='tokenInfo'>
-        <!-- <div class="price">
+      <div class="nft">
+        <div class="main">
+          <img class="tokenImage" src="./images/openPlot.jpg" alt="NFT" />
+          <h2>Open Plots</h2>
+          <p class="description">Plots at your preferred locations.</p>
+          <div class="tokenInfo">
+            <!-- <div class="price">
           <ins>◘</ins>
           <p>0.031 ETH</p>
         </div> -->
-      </div>
-      <hr />
-      <div class='creator'>
-        <div class='wrapper'>
-          <img src="./logo.jpg" alt="Creator" />
+          </div>
+          <hr />
+          <div class="creator">
+            <div class="wrapper">
+              <img src="./images/logo.jpg" alt="Creator" />
+            </div>
+            <p><ins>Presented by</ins> BARODA INFRA</p>
+          </div>
         </div>
-        <p><ins>Presented by</ins> BARODA INFRA</p>
       </div>
-    </div>
-  </div>
 
-  <div class="nft">
-    <div class='main'>
-      <img class='tokenImage' src="./commercialBuilding.jpg" alt="NFT" />
-      <h2>Leasing</h2>
-      <p class='description'>Leasing of commercial properties.</p>
-      <div class='tokenInfo'>
-        <!-- <div class="price">
+      <div class="nft">
+        <div class="main">
+          <img
+            class="tokenImage"
+            src="./images/commercialBuilding.jpg"
+            alt="NFT"
+          />
+          <h2>Leasing</h2>
+          <p class="description">Leasing of commercial properties.</p>
+          <div class="tokenInfo">
+            <!-- <div class="price">
           <ins>◘</ins>
           <p>0.031 ETH</p>
         </div> -->
-      </div>
-      <hr />
-      <div class='creator'>
-        <div class='wrapper'>
-          <img src="./logo.jpg" alt="Creator" />
+          </div>
+          <hr />
+          <div class="creator">
+            <div class="wrapper">
+              <img src="./images/logo.jpg" alt="Creator" />
+            </div>
+            <p><ins>Presented by</ins> BARODA INFRA</p>
+          </div>
         </div>
-        <p><ins>Presented by</ins> BARODA INFRA</p>
       </div>
-    </div>
-  </div>
 
-  <div class="nft">
-    <div class='main'>
-      <img class='tokenImage' src="./demo3.jpeg" alt="NFT" />
-      <h2>Rent</h2>
-      <p class='description'>Renting Residential/Commercial spaces.</p>
-      <div class='tokenInfo'>
-        <!-- <div class="price">
+      <div class="nft">
+        <div class="main">
+          <img class="tokenImage" src="./images/project2.jpeg" alt="NFT" />
+          <h2>Rent</h2>
+          <p class="description">Renting Residential/Commercial spaces.</p>
+          <div class="tokenInfo">
+            <!-- <div class="price">
           <ins>◘</ins>
           <p>0.031 ETH</p>
         </div> -->
-      </div>
-      <hr />
-      <div class='creator'>
-        <div class='wrapper'>
-          <img src="./logo.jpg" alt="Creator" />
+          </div>
+          <hr />
+          <div class="creator">
+            <div class="wrapper">
+              <img src="./images/logo.jpg" alt="Creator" />
+            </div>
+            <p><ins>Presented by</ins> BARODA INFRA</p>
+          </div>
         </div>
-        <p><ins>Presented by</ins> BARODA INFRA</p>
       </div>
     </div>
-  </div>
 
-</div>
+    <br />
+    <br />
 
-<br>
-<br>
+    <footer id="sticky-footer">
+      <div class="social-icons">
+        <a
+          href="https://wa.me/+918108595333"
+          target="_blank"
+          class="social-icon"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/barodainfra/"
+          target="_blank"
+          class="social-icon"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/@barodainfra1293"
+          target="_blank"
+          class="social-icon"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100081278386921"
+          target="_blank"
+          class="social-icon"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
 
-<footer id="sticky-footer">
-  <div class="social-icons">
-    <a href="https://wa.me/+918108595333" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.instagram.com/barodainfra/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.youtube.com/@barodainfra1293" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=100081278386921" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-  </div>
-</footer>
-
-<script src="./main.js"></script>
-
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>

@@ -1,103 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./main.css">
-  <!-- <link rel="stylesheet" href="./services.css"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./about.css">
-  <link rel="icon" href="./logo.jpg" type="image/jpg">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <!-- <link rel="stylesheet" href="./services.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="icon" href="./logo.jpg" type="image/jpg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo.jpg" alt="Logo" />
+      </div>
+      <div class="menu" id="menu">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="burger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
 
-  <nav class="navbar">
-    <div class="logo">
-      <img src="./logo.jpg" alt="Logo">
+    <br />
+    <br />
+
+    <div class="servCard">
+      <div class="cards">
+        <img src="./images/person.png" alt="" />
+        <p>
+          <b>LOKENDRA SINGH | CEO & Founder</b> <br /><br />
+
+          We proudly present Mr. Lokendra Singh, an esteemed leader and the
+          visionary founder of our distinguished real estate enterprise. Armed
+          with a Post Graduate degree in BioScience, Mr. Singh brings forth a
+          sterling 28-year career, marked by his profound impact as a seasoned
+          sales professional across the Real Estate, ITES, and Pharmaceuticals
+          sectors.
+          <br /><br />
+          Mr. Singh's mastery extends across critical domains, encompassing
+          Negotiation, Business Planning, Analytical Skills, Operational
+          Management, Team Building, Sales, Sales Training Mentoring, and GAP
+          Analysis. His unwavering commitment to operational excellence is
+          underscored by his certification as a Six Sigma analyst, a testament
+          to his dedication to precision and efficiency in every facet of our
+          operations.
+          <br /><br />
+          Before assuming the helm of leadership in our company, Mr. Singh left
+          an indelible mark as the head of a prominent real estate brokerage
+          firm in Mumbai, steering its success over an impressive 15-year span.
+          His entrepreneurial prowess, coupled with deep industry insights,
+          continues to be the guiding force propelling our company toward new
+          heights.
+          <br /><br />
+          Mr. Singh's legacy exemplifies a standard of professionalism and
+          success within the competitive real estate landscape. His visionary
+          leadership sets the tone for our commitment to excellence, ensuring
+          that our clients and stakeholders experience the pinnacle of service
+          in the dynamic and evolving world of real estate.
+        </p>
+      </div>
+
+      <div class="cards">
+        <img src="./images/person.png" alt="" />
+        <p>
+          <b>MUGDHA GANDHI | Vice President</b> <br /><br />
+
+          In the echelons of our esteemed organization, we proudly present Ms.
+          Mugdha Gandhi, a distinguished Civil Engineer and the Vice President
+          par excellence. With a stellar five-year career, Ms. Gandhi has not
+          only carved her niche but has become the driving force behind pivotal
+          areas such as Sales, Marketing, Tele-Calling, Data Analysis, Sales
+          Management, Training and Orientation of New Joinees, Lead Generation,
+          Database Management and Market Survey.
+          <br /><br />
+          A cornerstone in the foundation of our company, Ms. Gandhi brings
+          forth a wealth of experience, having previously held the role of Sales
+          Manager at a multinational corporation. Her professional journey
+          extends beyond, encompassing noteworthy collaborations with renowned
+          developers in Vadodara. This strategic alliance has solidified her
+          standing as a key player endowed with an in-depth understanding of the
+          intricate dynamics of the local real estate market.
+          <br /><br />
+          Ms. Gandhi's unwavering commitment to excellence reverberates through
+          her application of advanced business acumen, meticulous deployment of
+          strategic sales methodologies, and the artistry of polished
+          presentation skills. Beyond these attributes, she serves as a beacon,
+          guiding clients with precision and foresight, ensuring their journey
+          through the ever-evolving landscape of today's real estate market is
+          not just successful but exceptionally informed.
+          <br /><br />
+          As the Vice President, Ms. Mugdha Gandhi embodies a standard of
+          professionalism and dedication that sets a defining tone for our
+          organization. Her expansive knowledge and strategic prowess contribute
+          significantly to our commitment to excellence, elevating the real
+          estate experience for our clients in ways that resonate long after the
+          transaction is complete.
+        </p>
+      </div>
+
+      <div class="cards">
+        <img src="./images/person.png" alt="" />
+        <p>
+          <b>PREM MISHRA | Sales Executive - <i>Sells with Prem</i></b>
+          <br /><br />
+
+          Introducing Prem Mishra, our distinguished Sales Executive, currently
+          making significant contributions to our team in Vadodara. Originally
+          from Raipur, Prem is a dedicated cybersecurity student, seamlessly
+          blending technological expertise with refined sales acumen.
+          <br /><br />
+          As a cybersecurity enthusiast, Prem integrates academic knowledge with
+          practical insights, cultivating a profound understanding of the
+          dynamic digital landscape. In his role as Sales Executive, Prem is
+          unwavering in his commitment to delivering unparalleled service,
+          navigating Vadodara's real estate market with meticulous attention to
+          detail and a cybersecurity-forward approach.
+          <br /><br />
+          With a steadfast focus on excellence, Prem embodies the future of real
+          estate, where technological innovation and exemplary service coalesce.
+          His presence on our sales team reflects our dedication to staying at
+          the forefront of an ever-evolving digital landscape. Prem Mishra
+          symbolizes not just the acquisition of properties but also the
+          assurance of a secure and digitally safeguarded real estate
+          experience. <br /><br />
+        </p>
+      </div>
+
+      <div class="cards">
+        <img src="./images/person.png" alt="" />
+        <p>
+          <b>NILESH PRAJAPATI | Sales Executive</b>
+          <br /><br />
+
+          Nilesh Prajapati serves as a highly accomplished Sales Executive at
+          Baroda Infra, bringing a wealth of experience from the automotive
+          industry. Commencing his career as a Sales Executive at Popular
+          Wheelers India Pvt. Ltd., Nilesh demonstrated expertise in sales
+          strategies and cultivated enduring client relationships. His journey
+          continued as a Junior Mechanic at Katariya Automobiles, where he
+          refined his technical acumen with a focus on precision and
+          detail-oriented work.
+
+          <br /><br />
+
+          Having made significant contributions at Downtown Motors (Hyundai
+          Showroom), Nilesh played a pivotal role in elevating customer service
+          and sales standards. In his current capacity at Baroda Infra, Nilesh
+          seamlessly integrates his diverse background, offering clients a blend
+          of refined sales techniques and technical insight.
+
+          <br /><br />
+
+          Clients engaging with Nilesh can expect a partnership characterized by
+          professionalism, dedication, and an unwavering commitment to achieving
+          their real estate objectives. Nilesh's multifaceted skill set,
+          complemented by a client-centric philosophy, exemplifies the high
+          standards set by Baroda Infra. His nuanced approach ensures clients
+          receive expert guidance and an exceptional level of service throughout
+          their real estate journey.
+        </p>
+      </div>
     </div>
-    <div class="menu" id="menu">
-      <ul>
-        <li><a target="_blank" href="./home.html">Home</a></li>
-        <li><a target="_blank" href="./about.html">About</a></li>
-        <li><a target="_blank" href="./services.html">Services</a></li>
-        <li><a target="_blank" href="./contact.html">Contact</a></li>
-      </ul>
+
+    <br />
+    <br />
+
+    <!-- <div class="company-details">
+      <h2>Company Details</h2>
+      <div class="typewriter-textbox">
+        <p id="typewriter-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus.
+          Autem eum dolorem voluptatem. Sint, totam quis labore dignissimos
+          doloremque, deserunt enim maiores quibusdam, sapiente accusamus
+          placeat amet necessitatibus eos ipsam tempore excepturi perferendis
+          possimus atque? Unde quod nihil nobis deleniti at, dolorum deserunt,
+          enim autem consequuntur nisi porro laudantium fuga itaque. Nam eum
+          accusamus modi doloribus ratione alias culpa atque dicta a molestias
+          facilis, libero provident consequatur voluptatibus, placeat natus
+          minus nihil eaque velit animi sapiente laboriosam beatae rerum
+          tenetur? Cum ducimus, error explicabo nobis aliquid dignissimos
+          aspernatur? Voluptatibus placeat explicabo odio id architecto! Eum
+          accusamus minima adipisci, aliquam modi exercitationem tempore odit
+          vero culpa tempora necessitatibus commodi eaque cum eveniet. Impedit
+          voluptas vero saepe quam dolor architecto vel recusandae pariatur
+          harum distinctio nihil iure fuga, animi dolore quia perspiciatis
+          suscipit accusantium soluta non dolorum rerum veniam error quidem.
+          Quisquam error beatae eos maiores, eum, assumenda deleniti excepturi
+          autem incidunt adipisci minima illum, sunt tempore eligendi nisi ipsa!
+          Ullam nostrum rem ad exercitationem impedit distinctio necessitatibus
+          tempore sapiente quaerat non quis aliquam voluptatum dignissimos est,
+          fugit tempora at corporis officia, eius obcaecati atque aut fuga
+          minima ex? Dolorum minima quis at architecto, commodi explicabo minus
+          deleniti itaque nihil quo.
+        </p>
+      </div>
     </div>
-    <div class="burger" onclick="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-  </nav>
 
-<br>
-<br>
+    <br />
+    <br /> -->
 
-<div class="servCard">
-  <div class="cards"><img src="./person.png" alt=""><p><b>LOKENDRA SINGH | CEO & Founder</b> <br><br>
+    <footer id="sticky-footer">
+      <div class="social-icons">
+        <a
+          href="https://wa.me/+918108595333"
+          target="_blank"
+          class="social-icon"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/barodainfra/"
+          target="_blank"
+          class="social-icon"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/@barodainfra1293"
+          target="_blank"
+          class="social-icon"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100081278386921"
+          target="_blank"
+          class="social-icon"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
 
-    We proudly present Mr. Lokendra Singh, an esteemed leader and the visionary founder of our distinguished real estate enterprise. Armed with a Post Graduate degree in BioScience, Mr. Singh brings forth a sterling 28-year career, marked by his profound impact as a seasoned sales professional across the Real Estate, ITES, and Pharmaceuticals sectors.
-    <br><br>
-    Mr. Singh's mastery extends across critical domains, encompassing Negotiation, Business Planning, Analytical Skills, Operational Management, Team Building, Sales, Sales Training Mentoring, and GAP Analysis. His unwavering commitment to operational excellence is underscored by his certification as a Six Sigma analyst, a testament to his dedication to precision and efficiency in every facet of our operations.
-    <br><br>
-    Before assuming the helm of leadership in our company, Mr. Singh left an indelible mark as the head of a prominent real estate brokerage firm in Mumbai, steering its success over an impressive 15-year span. His entrepreneurial prowess, coupled with deep industry insights, continues to be the guiding force propelling our company toward new heights.
-    <br><br>
-    Mr. Singh's legacy exemplifies a standard of professionalism and success within the competitive real estate landscape. His visionary leadership sets the tone for our commitment to excellence, ensuring that our clients and stakeholders experience the pinnacle of service in the dynamic and evolving world of real estate.</p>
-  
-  </div>
-
-  <div class="cards"><img src="./person.png" alt=""><p><b>MUGDHA GANDHI | Vice President</b> <br><br>
-
-    In the echelons of our esteemed organization, we proudly present Ms. Mugdha Gandhi, a distinguished Civil Engineer and the Vice President par excellence. With a stellar five-year career, Ms. Gandhi has not only carved her niche but has become the driving force behind pivotal areas such as Sales, Marketing, Tele-Calling, Data Analysis, Sales Management, Training and Orientation of New Joinees, Lead Generation, Database Management and Market Survey.
-    <br><br>
-    A cornerstone in the foundation of our company, Ms. Gandhi brings forth a wealth of experience, having previously held the role of Sales Manager at a multinational corporation. Her professional journey extends beyond, encompassing noteworthy collaborations with renowned developers in Vadodara. This strategic alliance has solidified her standing as a key player endowed with an in-depth understanding of the intricate dynamics of the local real estate market.
-    <br><br>
-    Ms. Gandhi's unwavering commitment to excellence reverberates through her application of advanced business acumen, meticulous deployment of strategic sales methodologies, and the artistry of polished presentation skills. Beyond these attributes, she serves as a beacon, guiding clients with precision and foresight, ensuring their journey through the ever-evolving landscape of today's real estate market is not just successful but exceptionally informed.
-    <br><br>
-    As the Vice President, Ms. Mugdha Gandhi embodies a standard of professionalism and dedication that sets a defining tone for our organization. Her expansive knowledge and strategic prowess contribute significantly to our commitment to excellence, elevating the real estate experience for our clients in ways that resonate long after the transaction is complete.</p>
-
-  </div>
-
-  <div class="cards"><img src="./person.png" alt=""><p><b>PREM MISHRA | Sales Executive - <i>Sells with Prem</i></b> <br><br>
-
-    Introducing Prem Mishra, our distinguished Sales Executive, currently making significant contributions to our team in Vadodara. Originally from Raipur, Prem is a dedicated cybersecurity student, seamlessly blending technological expertise with refined sales acumen.
-    <br><br>
-    As a cybersecurity enthusiast, Prem integrates academic knowledge with practical insights, cultivating a profound understanding of the dynamic digital landscape. In his role as Sales Executive, Prem is unwavering in his commitment to delivering unparalleled service, navigating Vadodara's real estate market with meticulous attention to detail and a cybersecurity-forward approach.
-    <br><br>
-    With a steadfast focus on excellence, Prem embodies the future of real estate, where technological innovation and exemplary service coalesce. His presence on our sales team reflects our dedication to staying at the forefront of an ever-evolving digital landscape. Prem Mishra symbolizes not just the acquisition of properties but also the assurance of a secure and digitally safeguarded real estate experience. <br><br>
-  </p>
-  
-  </div>
-
-</div>
-
-<br> <br>
-
-<div class="company-details">
-  <h2>Company Details</h2>
-  <div class="typewriter-textbox">
-    <p id="typewriter-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus. Autem eum dolorem voluptatem. Sint, totam quis labore dignissimos doloremque, deserunt enim maiores quibusdam, sapiente accusamus placeat amet necessitatibus eos ipsam tempore excepturi perferendis possimus atque? Unde quod nihil nobis deleniti at, dolorum deserunt, enim autem consequuntur nisi porro laudantium fuga itaque. Nam eum accusamus modi doloribus ratione alias culpa atque dicta a molestias facilis, libero provident consequatur voluptatibus, placeat natus minus nihil eaque velit animi sapiente laboriosam beatae rerum tenetur? Cum ducimus, error explicabo nobis aliquid dignissimos aspernatur? Voluptatibus placeat explicabo odio id architecto! Eum accusamus minima adipisci, aliquam modi exercitationem tempore odit vero culpa tempora necessitatibus commodi eaque cum eveniet. Impedit voluptas vero saepe quam dolor architecto vel recusandae pariatur harum distinctio nihil iure fuga, animi dolore quia perspiciatis suscipit accusantium soluta non dolorum rerum veniam error quidem. Quisquam error beatae eos maiores, eum, assumenda deleniti excepturi autem incidunt adipisci minima illum, sunt tempore eligendi nisi ipsa! Ullam nostrum rem ad exercitationem impedit distinctio necessitatibus tempore sapiente quaerat non quis aliquam voluptatum dignissimos est, fugit tempora at corporis officia, eius obcaecati atque aut fuga minima ex? Dolorum minima quis at architecto, commodi explicabo minus deleniti itaque nihil quo.</p>
-  </div>
-</div>
-
-<br>
-<br>
-
-<footer id="sticky-footer">
-  <div class="social-icons">
-    <a href="https://wa.me/+918108595333" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.instagram.com/barodainfra/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.youtube.com/@barodainfra1293" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=100081278386921" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-  </div>
-</footer>
-
-<script src="./main.js"></script>
-<script src="./about.js"></script>
-
-</body>
+    <script src="./main.js"></script>
+    <script src="./about.js"></script>
+  </body>
 </html>
