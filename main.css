@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   background: url(./images/bg1.jpg);
-  animation: moveBackground 50s linear infinite;
+  animation: moveBackground 40s linear infinite;
   background-size: cover;
   background-repeat: no-repeat;
   backdrop-filter: blur(3px);

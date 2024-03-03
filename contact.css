@@ -61,6 +61,6 @@ button:hover {
 }
 
 iframe {
-  height: 80vh;
+  max-height: revert-layer;
   max-width: 100%;
 }
