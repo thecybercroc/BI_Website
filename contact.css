@@ -3,62 +3,64 @@ body {
 }
 
 .contact-container {
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    background-color: black;
-    color: #ca8605;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    /* color: #333; */
-    color: #ca8605;
-  }
-  
-  p {
-    /* color: #333; */
-    color: #ca8605;
-  }
-  
-  form {
-    display: grid;
-    grid-gap: 20px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 0px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-    background-color: rgba(128, 128, 128, 0.2);
-  }
-  
-  button {
-      background-color: #ca8605;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    
-    button:hover {
-      background-color: #45ca8e;
-  }
-  
-  #confirmationMessage {
-    margin-top: 20px;
-    color: #28a745; /* Green color for success message */
-  }
+  background-color: black;
+  color: #ca8605;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-block-size: 100%;
+}
+
+h1,
+p {
+  color: #ca8605;
+}
+
+form {
+  display: grid;
+  grid-gap: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ca8605;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ca8605;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+button {
+  background-color: #ca8605;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45ca8e;
+}
+
+#confirmationMessage {
+  margin-top: 20px;
+  color: #28a745; /* Green color for success message */
+}
+
+iframe {
+  height: 80vh;
+  max-width: 100%;
+}
